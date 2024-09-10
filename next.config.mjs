@@ -8,8 +8,8 @@ export function webpack(config, options) {
       name: 'next1',
       filename: 'static/chunks/remoteEntry.js', // Añade el archivo para el host
       remotes: {
-        next2: `next2@http://localhost:3001/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
-        pagos: "pagos@http://localhost:4173/assets/remoteEntry.js", // Añade el remoto de 'pagos'
+        next2: `next2@https://nextjs-remote-app.vercel.app/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+        //pagos: "pagos@http://localhost:4173/assets/remoteEntry.js", // Añade el remoto de 'pagos'
       },
     }),
   );
